@@ -14,6 +14,8 @@ const ConvertFile: React.FC<OwnProps> = (props) => {
       setFiles(e.target.result);
     };
   };
+  const result: string[] = Object.keys(files).map((key: any) => files[key]);
+  console.log(result);
   return (
     <div>
       <h1>Upload Json file - Example</h1>
